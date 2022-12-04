@@ -13,7 +13,7 @@ body {
     padding: 0;
     background-color: #f5f5f5;
     font-family: 'Merriweather', serif;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
 }
 
@@ -195,8 +195,64 @@ li.fot {
 }
 /* zobrazení pro PC */
 
-/* MENU */
+
 @media (min-width: 1000px) {
 
+    body {
+        background-color: #DCDCDC;
+    }
+    .hlavicka {
+        padding: 60px;
+    }
+    .titulek {
+        font-size: 65px;
+    }
 
+    .perex {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    .obdelnik {
+        width: 960px;
+        margin-top: -70px;
+        background-color: #f5f5f5;
+        box-shadow: 0 6px 10px rgba(36, 49, 49, 0.3);
+        margin-left: calc( (100% - 960px)/2);
+        margin-right: calc( (100% - 960px)/2);
+    }
+/* MENU */
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 240px;
+    margin-top: 40px;
+    
 }
+.menu li {
+    border-top: none;
+    border-right: none;
+    width: 150px;    
+}
+.horni{
+    display: flex;
+    flex-direction: row;
+    
+}
+.mujuvod{
+    flex-direction: column;
+    margin: 25px;
+    justify-content: space-between;
+}
+/* obsah */
+
+.zmena {
+    margin-left: 180px;
+}
+/* fotogalerie */
+.foto {
+    width: calc(100%/3);
+  }
+}
+
